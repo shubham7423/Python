@@ -9,6 +9,9 @@
 x<span class="token punctuation">,</span>y <span class="token operator">=</span> <span class="token builtin">map</span><span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">,</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter two numbers"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"{}+{}={}"</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">,</span>add<span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 </code></pre>
+<pre><code>Enter two numbers2 4
+2+4=6
+</code></pre>
 <h1 id="python-program-for-factorial-of-number">Python program for factorial of number</h1>
 <pre class=" language-python"><code class="prism  language-python"><span class="token keyword">def</span> <span class="token function">fact</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
     fac <span class="token operator">=</span> <span class="token number">1</span> 
@@ -18,17 +21,26 @@ x<span class="token punctuation">,</span>y <span class="token operator">=</span>
 x <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter numbers"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Factorial of {} is {}"</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>fact<span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 </code></pre>
+<pre><code>Enter numbers4
+Factorial of 4 is 24
+</code></pre>
 <h1 id="simple-interest">Simple interest</h1>
 <pre class=" language-python"><code class="prism  language-python"><span class="token keyword">def</span> <span class="token function">si</span><span class="token punctuation">(</span>p<span class="token punctuation">,</span>r<span class="token punctuation">,</span>t<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword">return</span> <span class="token punctuation">(</span>p<span class="token operator">*</span>r<span class="token operator">*</span>t<span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">100</span>
 p<span class="token punctuation">,</span>r<span class="token punctuation">,</span>t <span class="token operator">=</span> <span class="token builtin">map</span><span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">,</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter prt"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Simple interest: "</span><span class="token punctuation">,</span>si<span class="token punctuation">(</span>p<span class="token punctuation">,</span>r<span class="token punctuation">,</span>t<span class="token punctuation">)</span><span class="token punctuation">)</span>
 </code></pre>
+<pre><code>Enter prt10000 3 5
+Simple interest:  1500.0
+</code></pre>
 <h1 id="compound-interest">Compound interest</h1>
 <pre class=" language-python"><code class="prism  language-python"><span class="token keyword">def</span> <span class="token function">compound_interest</span><span class="token punctuation">(</span>c<span class="token punctuation">,</span>r<span class="token punctuation">,</span>t<span class="token punctuation">,</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword">return</span> c<span class="token operator">*</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token operator">+</span>r<span class="token operator">/</span>n<span class="token punctuation">)</span><span class="token operator">**</span><span class="token punctuation">(</span>n<span class="token operator">*</span>t<span class="token punctuation">)</span>
 c<span class="token punctuation">,</span>r<span class="token punctuation">,</span>t<span class="token punctuation">,</span>n <span class="token operator">=</span> <span class="token builtin">map</span><span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">,</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter c r t n: "</span><span class="token punctuation">)</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Compound interest: "</span><span class="token punctuation">,</span>compound_interest<span class="token punctuation">(</span>c<span class="token punctuation">,</span>r<span class="token punctuation">,</span>t<span class="token punctuation">,</span>n<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<pre><code>Enter c r t n: 10000 4 3 6
+Compound interest:  98464004.20048496
 </code></pre>
 <h1 id="armstrong-number">Armstrong number</h1>
 <pre class=" language-python"><code class="prism  language-python"><span class="token keyword">def</span> <span class="token function">armstrong</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
@@ -43,12 +55,18 @@ c<span class="token punctuation">,</span>r<span class="token punctuation">,</spa
 num <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter number: "</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 armstrong<span class="token punctuation">(</span>num<span class="token punctuation">)</span>
 </code></pre>
+<pre><code>Enter number: 153
+Armstrong number
+</code></pre>
 <h1 id="area-of-a-circle">Area of a circle</h1>
 <pre class=" language-python"><code class="prism  language-python"><span class="token keyword">import</span> math
 <span class="token keyword">def</span> <span class="token function">area</span><span class="token punctuation">(</span>r<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword">return</span> math<span class="token punctuation">.</span>pi<span class="token operator">*</span>r<span class="token operator">*</span>r
 rad <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter radius: "</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>area<span class="token punctuation">(</span>rad<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<pre><code>Enter radius: 3
+28.274333882308138
 </code></pre>
 <h1 id="prime-number-in-interval">Prime number in interval</h1>
 <pre class=" language-python"><code class="prism  language-python"><span class="token keyword">def</span> <span class="token function">prime</span><span class="token punctuation">(</span>s<span class="token punctuation">,</span>e<span class="token punctuation">)</span><span class="token punctuation">:</span>
@@ -62,6 +80,16 @@ x<span class="token punctuation">,</span>y <span class="token operator">=</span>
 prime<span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span>
     
 </code></pre>
+<pre><code>Enter start and end: 2 20
+2
+3
+5
+7
+11
+13
+17
+19
+</code></pre>
 <h1 id="check-prime-number">Check prime number</h1>
 <pre class=" language-python"><code class="prism  language-python"><span class="token keyword">def</span> <span class="token function">primen</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
     flag <span class="token operator">=</span> <span class="token number">0</span>
@@ -71,6 +99,9 @@ prime<span class="token punctuation">(</span>x<span class="token punctuation">,<
     <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Not Prime"</span><span class="token punctuation">)</span> <span class="token keyword">if</span> flag <span class="token keyword">else</span> <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Prime"</span><span class="token punctuation">)</span>
 primen<span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter number: "</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 </code></pre>
+<pre><code>Enter number: 37
+Prime
+</code></pre>
 <h1 id="nth-fibonacci-number">nth fibonacci number</h1>
 <pre class=" language-python"><code class="prism  language-python"><span class="token keyword">def</span> <span class="token function">nfibb</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
     f <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span>
@@ -78,12 +109,23 @@ primen<span class="token punctuation">(</span><span class="token builtin">int</s
     <span class="token keyword">return</span> f<span class="token punctuation">[</span>n<span class="token number">-1</span><span class="token punctuation">]</span>
 nfibb<span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter number: "</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 </code></pre>
+<pre><code>Enter number: 9
+
+
+
+
+
+21
+</code></pre>
 <h1 id="check-fibonacci-number">Check fibonacci number</h1>
 <pre class=" language-python"><code class="prism  language-python"><span class="token keyword">def</span> <span class="token function">check_fibb</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
     f <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span>
     <span class="token punctuation">[</span>f<span class="token punctuation">.</span>append<span class="token punctuation">(</span>f<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">+</span>f<span class="token punctuation">[</span>i<span class="token number">-1</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span>n<span class="token punctuation">)</span><span class="token punctuation">]</span>
     <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Fibonacci number"</span><span class="token punctuation">)</span> <span class="token keyword">if</span> n <span class="token keyword">in</span> f <span class="token keyword">else</span> <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Not fibonacci"</span><span class="token punctuation">)</span>
 check_fibb<span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter number: "</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<pre><code>Enter number: 21
+Fibonacci number
 </code></pre>
 <h1 id="nth-multiple-of-a-number-in-fibonacci-series">nth multiple of a number in Fibonacci Series</h1>
 <pre class=" language-python"><code class="prism  language-python"><span class="token keyword">def</span> <span class="token function">nthnum</span><span class="token punctuation">(</span>k<span class="token punctuation">,</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
@@ -118,26 +160,26 @@ x<span class="token punctuation">,</span>y <span class="token operator">=</span>
     <span class="token keyword">return</span> n<span class="token operator">*</span><span class="token punctuation">(</span>n<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>n<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">6</span>
 sum2<span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter number: "</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 </code></pre>
-<pre><code>Enter number: 3
+<pre><code>Enter number: 6
 
 
 
 
 
-14.0
+91.0
 </code></pre>
 <h1 id="sum-of-cubes-of-first-n-numbers">Sum of cubes of first n numbers:</h1>
 <pre class=" language-python"><code class="prism  language-python"><span class="token keyword">def</span> <span class="token function">sum3</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword">return</span> <span class="token punctuation">(</span>n<span class="token operator">*</span><span class="token punctuation">(</span>n<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token operator">**</span><span class="token number">2</span>
 sum3<span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter number: "</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 </code></pre>
-<pre><code>Enter number: 3
+<pre><code>Enter number: 6
 
 
 
 
 
-36.0
+441.0
 </code></pre>
 <pre class=" language-python"><code class="prism  language-python">
 </code></pre>
